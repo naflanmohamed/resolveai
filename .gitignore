@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.coverage
+.ruff_cache/
+*.db
+*.sqlite
+*.sqlite3
+.env
+node_modules/
+frontend/dist/
+frontend/*.tsbuildinfo
+.DS_Store
+*.log
+models/
+*.joblib

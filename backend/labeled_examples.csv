@@ -1,0 +1,65 @@
+text,label
+I was charged twice on my card this month,Billing
+My invoice shows an incorrect total,Billing
+Why did my subscription renewal cost more,Billing
+Please refund the duplicate payment,Billing
+My credit card payment failed but money was deducted,Billing
+Need a copy of last month's invoice,Billing
+I want to change my billing address,Billing
+Can you explain the extra fee on my receipt,Billing
+The invoice contains the wrong tax,Billing
+I need to update my payment method,Billing
+Why am I billed for a cancelled plan,Billing
+My trial was charged before the end date,Billing
+The payment receipt has not arrived,Billing
+Request a refund for an accidental purchase,Billing
+I have a pricing question about the monthly plan,Billing
+Our annual subscription renewal amount is incorrect,Billing
+The dashboard keeps showing a server error,Technical
+Application crashes when I upload a file,Technical
+I cannot connect to the API endpoint,Technical
+The page is frozen after the latest update,Technical
+My integration returns a 500 error,Technical
+The site is slow and times out repeatedly,Technical
+Webhooks have stopped delivering events,Technical
+I found a bug in the mobile app,Technical
+The export button does not work,Technical
+Notifications are not loading in the dashboard,Technical
+I see a blank screen after signing in,Technical
+The database sync is failing every hour,Technical
+The application says service temporarily unavailable,Technical
+The report download is stuck,Technical
+Our integration stopped working after deployment,Technical
+There is a technical issue with the settings page,Technical
+I forgot my password and cannot log in,Account
+Help me reset my account password,Account
+Please change the email linked to my account,Account
+My account was locked after too many attempts,Account
+How can I enable two factor authentication,Account
+I want to delete my account,Account
+Please update the owner of our workspace,Account
+How can I invite a new team member,Account
+I cannot verify my email address,Account
+Our admin left and we need account access,Account
+Can you change my username,Account
+Need to recover access to my profile,Account
+How do I deactivate the account,Account
+My login verification link has expired,Account
+My profile details are outdated,Account
+Need to revoke access for a former employee,Account
+Does your platform support CSV exports,Product
+Do you provide an integration with Slack,Product
+Where can I find the product roadmap,Product
+Can I enable dark mode in the dashboard,Product
+How does the reporting feature work,Product
+Is there a mobile application available,Product
+Can the system support multiple workspaces,Product
+Do you offer a trial for the team plan,Product
+How many users can I invite,Product
+Is there a feature for scheduled reports,Product
+What options are available in the premium plan,Product
+Do you support bulk document uploads,Product
+Can I customize the dashboard,Product
+Where is the API documentation,Product
+Does your product have multilingual support,Product
+What is the maximum upload size for documents,Product
