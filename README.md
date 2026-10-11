@@ -129,25 +129,7 @@ The baseline classifier is **real scikit-learn** but trained on a very small syn
 
 The first command makes a synthetic sample CSV. Replace/add representative cases rather than using those 64 examples as a real benchmark. The trainer splits stratified data into train/test, prints held-out accuracy, writes a classification report (`models/intent.joblib.metrics.json`), and finally fits the exported model on all labeled rows. Set `ML_MODEL_PATH=models/intent.joblib` in `backend/.env` and restart. The API and dashboard then use the loaded model plus its saved evaluation report. **Only load your own trusted joblib artifacts**; loading untrusted joblib files can execute code. The platform label set should match the training data for meaningful categorization.
 
-## FREE internet deployment
 
-See **[DEPLOY_FREE.md](DEPLOY_FREE.md)** for exact, step-by-step deployment on GitHub, Neon PostgreSQL, and Render. You can host both frontend (static site) and backend (Docker web service) on Render free-tier, connecting to Neon's free PostgreSQL database. A payment method is not required for this approach under the normal free-tier setup, but always review provider terms, quotas, and any request for billing information before accepting it.
-
-### Essential environment variables
-
-| Setting | Local | Hosted |
-| --- | --- | --- |
-| `DATABASE_URL` | `sqlite:///./resolveai.db` | Neon PostgreSQL connection URL |
-| `JWT_SECRET` | Dev example only | Random, long, private secret |
-| `CORS_ORIGINS` | `http://localhost:5173` | Exact hosted frontend URL (without trailing slash) |
-| `VITE_API_URL` (frontend build env) | `http://localhost:8000` | Exact hosted backend URL, including `https://` |
-| `DEMO_MODE` | `true` | `true` for a *synthetic-data-only portfolio demo*, otherwise `false` |
-| `ALLOW_REGISTRATION` | `false` | `false` (first user can still bootstrap admin account) |
-| `GEMINI_API_KEY` | Empty | Optional; use a provider-issued key if eligible |
-| `ML_MODEL_PATH` | Blank uses synthetic baseline | Optional, packaged trained model path (not included) |
-| `GEMINI_MODEL` | `gemini-2.5-flash` | Optional; choose a model available to your account |
-
-The frontend has **no secret API key**. Never place `GEMINI_API_KEY` or database credentials in a `VITE_` variable. That prefix exposes the value in a public browser bundle.
 
 ## Project structure
 
