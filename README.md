@@ -181,19 +181,4 @@ resolveai/
         └── style.css
 ```
 
-## Safety and privacy notes
-
-- Treat all uploaded text, tickets, customer names and chat messages as **sensitive**; demo with invented names and fake emails only. The optional Gemini integration sends ticket text and matched knowledge excerpts to a third-party API. Review that provider's terms and privacy settings before uploading anything confidential.
-- A response being **approved** means it is *saved*; nothing is sent to real customers or billing systems.
-- The first person to register becomes admin. Complete bootstrap immediately after deploying a new public backend. Later self-registration is off by default. For stronger environments, disable public bootstrap and provision admin credentials securely.
-- This is **single-workspace** application data. Roles distinguish admins/agents, but users are not separated into independent tenants. Do not expose it to unrelated organizations.
-- The default JWT is stored by the browser in local storage for convenience; prefer HttpOnly/SameSite cookies, refresh tokens and CSRF controls in real customer-facing environments.
-- Do not run production with the example JWT secret, an open CORS wildcard, untrusted joblib files, or default configurations.
-- There is no authentication rate limiting, password reset, robust secrets rotation, migrations, virus scanning, scanned-PDF OCR, or background queue. Add these before using real production customer data.
-- Hosted free compute sleeps after inactivity and may have cold-start delay; persistent data belongs in Neon, **not** SQLite stored on the Render server.
-
-## Portfolio tips
-
-Show a screencast of: creating a ticket → interpreting ML category/uncertainty → examining source excerpts → reviewing/editing the AI response → approval + audit record → analytics. Explain baseline limitations and demonstrate how you would benchmark improved embeddings and models. **Do not claim measured latency reduction or accuracy gains until you actually measure them.**
-
 License: MIT. All sample policies/tickets bundled here are invented for the demo.
