@@ -1,4 +1,4 @@
-# ResolveAI — Enterprise Support Copilot (portfolio edition)
+# ResolveAI - Enterprise Support Copilot (portfolio edition)
 
 **A runnable full-stack, human-in-the-loop customer support operations app.** Built with FastAPI, SQLAlchemy, React/TypeScript, scikit-learn, and LangGraph. Uses local TF-IDF search and an extractive draft generator by default; optionally calls Gemini if you set an API key. **No external message or account action is ever taken by the AI.**
 
@@ -55,7 +55,7 @@ flowchart LR
 
 Install **Python 3.11–3.13**, **Node.js 20+**, and Git if using GitHub. Unzip the project somewhere such as `C:\\Projects\\resolveai`.
 
-### Terminal 1 — Backend (PowerShell)
+### Terminal 1 - Backend (PowerShell)
 
 ```powershell
 cd C:\Projects\resolveai\backend
@@ -70,7 +70,7 @@ The `backend/.env` file defaults to local SQLite, so you **do not need to instal
 - Health check: http://localhost:8000/api/health
 - Interactive Swagger API docs: http://localhost:8000/docs
 
-### Terminal 2 — Frontend (PowerShell)
+### Terminal 2 - Frontend (PowerShell)
 
 ```powershell
 cd C:\Projects\resolveai\frontend
