@@ -1,4 +1,4 @@
-# ResolveAI - Enterprise Support Copilot (portfolio edition)
+# ResolveAI - Enterprise Support Copilot
 
 **A runnable full-stack, human-in-the-loop customer support operations app.** Built with FastAPI, SQLAlchemy, React/TypeScript, scikit-learn, and LangGraph. Uses local TF-IDF search and an extractive draft generator by default; optionally calls Gemini if you set an API key. **No external message or account action is ever taken by the AI.**
 
