@@ -2,7 +2,6 @@
 
 **A runnable full-stack, human-in-the-loop customer support operations app.** Built with FastAPI, SQLAlchemy, React/TypeScript, scikit-learn, and LangGraph. Uses local TF-IDF search and an extractive draft generator by default; optionally calls Gemini if you set an API key. **No external message or account action is ever taken by the AI.**
 
-> This is a functional portfolio/demo application, **not a production-certified multi-tenant helpdesk.** The repository includes representative workflows, authentication, automated API tests, and deployment configuration. It needs stronger security, monitoring, and performance work before handling sensitive customer data.
 
 ## Features
 
@@ -51,7 +50,7 @@ flowchart LR
 
 **Important:** Classifier scores on tiny synthetic data do **not** establish production performance. The UI labels this explicitly. No actual email is sent when you click **Approve**.
 
-## Run on Windows (recommended first run)
+## Run on Windows
 
 Install **Python 3.11–3.13**, **Node.js 20+**, and Git if using GitHub. Unzip the project somewhere such as `C:\\Projects\\resolveai`.
 
